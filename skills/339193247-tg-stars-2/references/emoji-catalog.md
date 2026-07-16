@@ -1,0 +1,1 @@
+# TG Stars — emoji catalog
