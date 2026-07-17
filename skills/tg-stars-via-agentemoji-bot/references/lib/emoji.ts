@@ -1,0 +1,32 @@
+/**
+ * Generated from Telegram pack "TG Stars • 🌅 Закат (via @agentemoji_bot)" (35 emoji). Do not edit by hand.
+ *
+ * Rendering requires parse_mode=HTML. Custom emoji display only when sent
+ * from a Telegram Premium account (or an eligible channel), not via a
+ * regular bot through the Bot API.
+ */
+
+/** Maps a fallback character to the custom emoji IDs that use it. */
+export const EMOJI: Record<string, readonly string[]> = {
+  "⭐️": ["5390824353283743476", "5390826268839159866", "5390832964693173567", "5390837826596149435", "5390879019627485338", "5390898265375942085", "5390906924030010120", "5390938126967415219", "5390963450094591356", "5391017815790623927", "5391081591760002218", "5391082686976664610", "5391099699342121342", "5391128273759542631", "5391181436864732077", "5391192161398076593", "5391195855069946195", "5391235892755078923", "5391245650920775976", "5391291482516789322", "5391293496856453519", "5391306648046314507", "5391310779804850597", "5391330227416770558", "5393136991309176711", "5393550248767433290", "5393562802956835548", "5393598902156958749"],
+  "©️": ["5390864206285281754"],
+  "💱": ["5391159352142895878"],
+  "🔒": ["5391194149967928107"],
+  "🫡": ["5391265180137072681"],
+  "⭐": ["5391296679427219323"],
+  "🎁": ["5391307846342189344"],
+  "🌟": ["5393074374980971328"],
+};
+
+function escapeHtml(s: string): string {
+  return s
+    .replace(/&/g, "&amp;")
+    .replace(/</g, "&lt;")
+    .replace(/>/g, "&gt;")
+    .replace(/"/g, "&quot;");
+}
+
+/** Returns the <tg-emoji> HTML tag for parse_mode=HTML messages. */
+export function tgEmoji(id: string, fallback: string): string {
+  return `<tg-emoji emoji-id="${id}">${escapeHtml(fallback)}</tg-emoji>`;
+}
